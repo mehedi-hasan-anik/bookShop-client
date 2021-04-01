@@ -8,7 +8,7 @@ const Home = () => {
     const [user,setUser,allImage,setAllImage]=useContext(userContext);
     const [loading,setLoading]=useState(false);
     useEffect(()=>{
-        fetch('http://localhost:5055/all')
+        fetch('https://apple-cobbler-26520.herokuapp.com/all')
         .then(res=> res.json())
         .then(data=>{
             setAllImage(data)

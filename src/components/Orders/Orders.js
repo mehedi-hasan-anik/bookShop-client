@@ -7,7 +7,7 @@ const Orders = () => {
     const [getData,setGetData]=useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5055/getOrder?email='+user.email)
+        fetch('https://apple-cobbler-26520.herokuapp.com/getOrder?email='+user.email)
         .then(res=>res.json())
         .then(data=>setGetData(data))
     },[])

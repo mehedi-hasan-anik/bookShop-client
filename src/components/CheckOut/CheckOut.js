@@ -15,7 +15,7 @@ const CheckOut = () => {
             price:found.price,
         }
 
-        fetch('http://localhost:5055/addOrder',{
+        fetch('https://apple-cobbler-26520.herokuapp.com/addOrder',{
             method:"POST",
             headers:{'Content-Type' : 'application/json'},
             body:JSON.stringify(order)

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ManageList = ({event}) => {
     const handleDelete = id =>{
-        fetch(`http://localhost:5055/delete/${id}`,{
+        fetch(`https://apple-cobbler-26520.herokuapp.com/delete/${id}`,{
             method:'DELETE',
             headers:{
                 'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ const Add = () => {
             price:data.price,
             author:data.author,
         }
-        const url = `http://localhost:5055/addEvent`;
+        const url = `https://apple-cobbler-26520.herokuapp.com/addEvent`;
         fetch(url,{
             method:'POST',
             headers:{
