@@ -13,6 +13,7 @@ const CheckOut = () => {
             bookName:found.name,
             quantity:1,
             price:found.price,
+            date: new Date(),
         }
 
         fetch('https://apple-cobbler-26520.herokuapp.com/addOrder',{

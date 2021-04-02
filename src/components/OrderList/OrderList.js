@@ -9,6 +9,7 @@ const OrderList = ({event}) => {
               <h5>Book Name : {event.bookName}</h5>
               <p> Quantity : {event.quantity}</p>
               <p> Price : ${event.price}</p>
+              <p>Order date : {new Date(event.date).toDateString('dd/MM/yyyy')}</p>
           </div>
         </div>
     );
