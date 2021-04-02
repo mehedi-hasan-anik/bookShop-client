@@ -13,7 +13,7 @@ const Photo = ({event}) => {
              <h5>{event.name}</h5>
              <h6>${event.price}</h6>
              <p>{event.author}</p>
-             <button onClick={()=>handleCheckOut(event._id)}>Buy Now</button>
+             <button onClick={()=>handleCheckOut(event._id)} style={{background:'blue', color:'#fff'}}>Buy Now</button>
         </div>
     );
 };
