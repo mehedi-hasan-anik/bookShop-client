@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,6 +28,7 @@ const Contact = () => {
                         <input type="submit" />
                     </div>
                 </form>
+                <Footer></Footer>
             </div>
         </div>
     </section>
