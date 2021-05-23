@@ -1,0 +1,9 @@
+.full-orders-area{
+    background: #EDEAEB;
+    padding-bottom: 500px;
+}
+.inner-full-orders-area h1{
+    padding: 50px;
+    color: #007ACC;
+    text-transform: uppercase;
+}

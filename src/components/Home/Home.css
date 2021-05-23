@@ -1,4 +1,15 @@
+.full-home-area{
+    padding: 50px 0px;
+    background: #EDEAEB;
+}
+
 .col-area{
     margin-top: 20px;
-    
+}
+.inner-full-home-area h2{
+    color: #007ACC;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 20px;
 }

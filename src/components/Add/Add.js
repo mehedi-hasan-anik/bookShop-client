@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import axios from 'axios';
 import './Add.css';
 import { userContext } from '../../App';
+import Me from '../Me/Me';
 
 const Add = () => {
 
@@ -49,19 +50,26 @@ const Add = () => {
 
     return (
         <div className="add-area">
-            <div className="inner-form">
-                 <form onSubmit={handleSubmit(onSubmit)}>
-    
-                        <input name="name" defaultValue="" ref={register} placeholder="Book Name" />
-                        <br/>
-                        <input  name="author" defaultValue="" ref={register}  placeholder="Author Name" />
-                        <br/>
-                        <input  name="price" defaultValue="" ref={register} placeholder="Price" />
-                        <br/>
-                        <input name="exampleRequired" type="file" onChange={handleImageUpload} />
-                        <br/>
-                        <input type="submit" />
-                 </form>
+            <div className="row">
+                <div className="col-md-4">
+                    <Me></Me>
+                </div>
+                <div className="col-md-8">
+                        <div className="inner-form">
+                        <form onSubmit={handleSubmit(onSubmit)}>
+            
+                                <input name="name" defaultValue="" ref={register} placeholder="Book Name" />
+                                <br/>
+                                <input  name="author" defaultValue="" ref={register}  placeholder="Author Name" />
+                                <br/>
+                                <input  name="price" defaultValue="" ref={register} placeholder="Price" />
+                                <br/>
+                                <input name="exampleRequired" type="file" onChange={handleImageUpload} />
+                                <br/>
+                                <input type="submit" />
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -1,6 +1,8 @@
 import React from 'react';
+import './ManageList.css';
 
 const ManageList = ({event}) => {
+    console.log(event);
     const handleDelete = id =>{
         fetch(`https://apple-cobbler-26520.herokuapp.com/delete/${id}`,{
             method:'DELETE',
@@ -12,10 +14,11 @@ const ManageList = ({event}) => {
     }
     
     return (
-        <div style={{border:'1px solid grey',padding:'10px'}}>
-            <h3>Book Name : <span style={{color:'blue'}}>{event.name}</span> </h3>
+        <div className="full-managelist">
+            <img src={event.imageURL} alt="" className="img-fluid" />
+            <h5>Book Name : <span style={{color:'blue'}}>{event.name}</span> </h5>
             <p>Author Name:{event.author}</p>
-            <h5>Price:{event.price}</h5>
+            <p>Price: ${event.price}</p>
             <button onClick={()=>handleDelete(event._id)}>Delete</button>
         </div>
     );

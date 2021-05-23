@@ -8,10 +8,10 @@ const Photo = ({event}) => {
         history.push(`/checkout/${id}`);
     }
     return (
-        <div className="container card card-area">
-            <img style={{width:'100%'}} src={event.imageURL} alt=""/>
+        <div className="container  cart-area">
+            <img style={{width:'100%',height:'400px'}} src={event.imageURL} alt=""/>
              <h5>{event.name}</h5>
-             <h6>${event.price}</h6>
+             <p>Price: ${event.price}</p>
              <p>{event.author}</p>
              <button onClick={()=>handleCheckOut(event._id)} style={{background:'blue', color:'#fff'}}>Buy Now</button>
         </div>

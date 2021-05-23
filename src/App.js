@@ -15,6 +15,10 @@ import NotFound from './components/NotFound/NotFound';
 import { createContext, useState } from 'react';
 import CheckOut from './components/CheckOut/CheckOut';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MainHome from './components/MainHome/MainHome';
+import Contact from './components/Contact/Contact';
+import Manage from './components/Manage/Manage';
+import Add from './components/Add/Add';
 export const userContext = createContext();
 
 function App() {
@@ -34,8 +38,17 @@ function App() {
            <Header></Header>
              <Switch>
 
-                 <Route path="/home">
-                    <Home></Home>
+                 <Route path="/mainHome">
+                    <MainHome></MainHome>
+                 </Route>
+                 <Route path="/manage">
+                    <Manage></Manage>
+                 </Route>
+                 <Route path="/addBooks">
+                    <Add></Add>
+                 </Route>
+                 <Route path="/contact">
+                    <Contact></Contact>
                  </Route>
                  <Route path="/orders">
                     <Orders></Orders>
@@ -53,7 +66,7 @@ function App() {
                     <CheckOut></CheckOut>
                  </PrivateRoute>
                  <Route exact path="/">
-                    <Home></Home>
+                    <MainHome></MainHome>
                  </Route>
                  <Route path="*">
                     <NotFound></NotFound>

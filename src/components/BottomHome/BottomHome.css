@@ -1,0 +1,14 @@
+.bottomHome-area{
+    margin: 30px;
+}
+.inner-bottomHome-area{
+    box-shadow: 10px 10px 30px  grey;
+}
+.inner-bottomHome-area h4{
+    color: #007ACC;
+}
+.cart1-area{
+    padding: 10px;
+    background: #F8F8F8;
+    border-right: 1px solid grey;
+}

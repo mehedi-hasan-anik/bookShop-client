@@ -1,0 +1,22 @@
+.full-managelist{
+    border:1px solid grey;
+    padding:10px;
+    margin-right:10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    max-height: 700px;
+    height: 100%;
+    box-shadow: 10px 10px 30px grey;
+    border:0px;
+}
+.full-managelist img{
+    height: 300px;
+    width: 100%;
+}
+.full-managelist button{
+    border-radius: 10px;
+    padding: 5px 20px;
+    background: #007ACC;
+    color: white;
+    border: 0px;
+}

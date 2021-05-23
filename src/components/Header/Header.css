@@ -1,25 +1,38 @@
-.full-header-area{
-    background: blue;
-    color: #fff;
+.full-nav-area{
+  background: #EDEAEB;
 }
-.logo-area{
+
+.nav-full-area{
+ 
+}
+.nav-full-area button{
+
+ border: 1px solid #007ACC;
+}
+.nav-bar-icon{
+
 
 }
-.nav-area{
+.nav-full-area a{
 
 }
-.nav-area ul{
-
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
+.navigation-area{
+  
 }
-.nav-area ul li{
-  display: inline-block;
-  color: #fff;
-  list-style: none;
-  text-decoration: none;
-  padding: 20px;
-  margin-right: 10px;
+.navigation-area ul{
+  
+}
+.navigation-area ul li{
+  
+}
+
+.navigation-area ul li .nav-link{
+  font-size: 18px;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.navigation-area ul li .nav-link:hover{
+  border: 1px solid #007ACC;
+  border-radius: 10px;
 }

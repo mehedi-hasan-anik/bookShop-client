@@ -19,9 +19,9 @@ const Home = () => {
     const homeResult = allImage.filter(event=> event.imageURL);
     
     return (
-        
-        <div className="container">
-           
+         <div className="full-home-area">
+        <div className="container inner-full-home-area">
+           <h2>ALL BOOKS</h2>
           {
               loading ?   <div className="row">
               {
@@ -34,6 +34,7 @@ const Home = () => {
             </div>
           }
        
+       </div>
        </div>
         
     );

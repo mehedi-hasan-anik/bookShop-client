@@ -1,0 +1,17 @@
+.swiper-container {
+    width: 100%;
+    height: 300px;
+  }
+  .full-swiper-area{
+    padding: 100px;
+  }
+  .inner-full-swiper-area{
+
+  }
+  .inner-full-swiper-area h2{
+    text-align: center;
+    padding: 50px;
+    color:#007ACC;
+    text-transform: uppercase;
+    font-size: 45px;
+  }

@@ -1,3 +1,20 @@
-.card-area{
-   
+.cart-area{
+   padding: 10px 0px;
+   border-radius: 20px;
+   background: white;
+   box-shadow: 10px 10px 30px grey;
+}
+.cart-area button{
+    width: 100%;
+    border-radius: 10px;
+    border:0px;
+    padding: 5px 0px;
+    margin-top: 10px;
+}
+.cart-area h5{
+    color: #007ACC;
+}
+.cart-area p{
+    margin: 0px;
+    padding: 0px;
 }

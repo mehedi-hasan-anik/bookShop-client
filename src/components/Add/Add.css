@@ -1,11 +1,23 @@
 .add-area{
-    
+  
 }
 .inner-form{
     margin: 0 auto;
-    width: 300px;
+    max-width: 500px;
+    width: 100%;
+    padding: 100px 0px;
+    text-align: center;
     
 }
 .inner-form input{
     margin-bottom: 10px;
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: 10px 10px 30px gray;
+}
+.inner-form input[type=submit] {
+    background: #007ACC;
+    color: white;
 }
